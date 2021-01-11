@@ -19,6 +19,7 @@ struct RandomBoxPointData {
         self.bottomLeft = CGPoint(x: 0, y: rect.size.height * 2)
         self.topLinePoints = self.createTopLinePoints(rect: rect, noOfPointsInTopLine: 7, verticalRandomization: 50, horizontalRandomization: 0)
         self.topLineControlPoints = CubicCurveAlgorithm().controlPointsFromPoints(dataPoints: self.topLinePoints)
+        print("Created points : \(self.topLinePoints[2].y)")
     }
     
     func createTopLinePoints(rect: CGRect, noOfPointsInTopLine: Int, verticalRandomization: Int, horizontalRandomization: Int) -> [CGPoint] {
@@ -50,7 +51,7 @@ struct RandomBoxPointData {
             }
         }
         
-        print("Created points: \(points)")
+        //print("Created points: \(points)")
         
         return points
         
