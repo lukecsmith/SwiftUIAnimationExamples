@@ -33,9 +33,11 @@ struct RandomBoxShape: View {
                               endPoint: .bottom))
         .position(x: 0, y: position)
         .onAppear {
-            self.points = RandomBoxPointData(rect: rect)
+            position = rect.size.height * 1.5
+            self.updatePoints(rect: rect)
             Timer.scheduledTimer(withTimeInterval: self.delay, repeats: false) { _ in
                 Timer.scheduledTimer(withTimeInterval: self.duration, repeats: true) { _ in
+                    
                     position = rect.size.height * 1.5
                     withAnimation(Animation.linear(duration: self.duration)) {
                         position = -100
@@ -43,6 +45,10 @@ struct RandomBoxShape: View {
                 }
             }
         }
+    }
+    
+    func updatePoints(rect: CGRect) {
+        self.points = RandomBoxPointData(rect: rect)
     }
 }
 
