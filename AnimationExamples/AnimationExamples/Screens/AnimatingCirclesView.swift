@@ -42,11 +42,11 @@ struct AnimatingCircleView: View {
             .opacity(self.large ? 0.0 : 1.0)
             .scaleEffect(self.large ? self.finalScale : self.initialScale)
             .foregroundColor(self.color)
-            .border(Color.black)
             .onAppear {
                 //first timer is just a one-shot delay to the start of animating - this varies per circle, allowing the overlapping effect.
                 //these scheduled timers are more accurate than doing a 'DispatchQueue.main.asyncAfter(deadline: .now() + x)'
                 Timer.scheduledTimer(withTimeInterval: self.delay, repeats: false) { _ in
+                    self.animate()
                     //second timer is the repeating one, which sets large back to false, then animates it to true
                     Timer.scheduledTimer(withTimeInterval: self.duration, repeats: true) { _ in
                         self.animate()

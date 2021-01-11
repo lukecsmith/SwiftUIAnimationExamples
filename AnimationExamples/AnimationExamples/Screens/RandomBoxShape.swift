@@ -14,7 +14,8 @@ struct RandomBoxShape: View {
     var rect: CGRect
     let delay: Double
     let duration: Double
-    let onTimerEnd: () -> Void
+    let onTimerEnd: (Int) -> Void
+    let shapeNo: Int
     
     var body: some View {
         Path { path in
@@ -34,20 +35,24 @@ struct RandomBoxShape: View {
                               endPoint: .bottom))
         .position(x: 0, y: position)
         .onAppear {
-            //print("Appeared with delay: \(self.delay)")
-            position = rect.size.height * 1.5
+            position = rect.size.height * 1.3
             self.updatePoints(rect: rect)
             Timer.scheduledTimer(withTimeInterval: self.delay, repeats: false) { _ in
                 //print("Creating repeat timer (obj with delay \(self.delay)")
+                timerAction()
                 Timer.scheduledTimer(withTimeInterval: self.duration, repeats: true) { _ in
                     //print("repeat timer triggered for obj with delay: \(self.delay)")
-                    self.onTimerEnd()
-                    position = rect.size.height * 1.5
-                    withAnimation(Animation.linear(duration: self.duration)) {
-                        position = -300
-                    }
+                    timerAction()
                 }
             }
+        }
+    }
+    
+    func timerAction() {
+        self.onTimerEnd(shapeNo)
+        position = rect.size.height * 1.5
+        withAnimation(Animation.linear(duration: self.duration)) {
+            position = -300
         }
     }
     
@@ -62,6 +67,6 @@ struct BoxWithRandomTopLine_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        RandomBoxShape(rect: CGRect.zero, delay: 0, duration: 5.0, onTimerEnd: {})
+        RandomBoxShape(rect: CGRect.zero, delay: 0, duration: 5.0, onTimerEnd: {_ in }, shapeNo: 0)
     }
 }

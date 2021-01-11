@@ -23,7 +23,7 @@ struct ContentView: View {
                 NavigationLink(destination: LineDrawingTest()) {
                     Text("Line Drawing")
                 }
-                NavigationLink(destination: AnimatingRandomShapesView()) {
+                NavigationLink(destination: AnimatingShapesAsMenuBackground()) {
                     Text("Random Shapes")
                 }
             }

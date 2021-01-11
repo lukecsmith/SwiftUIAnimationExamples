@@ -10,7 +10,7 @@ import SwiftUI
 struct AnimatingRandomShapesView: View {
     
     let noBoxes = 5
-    let duration: Double = 5.0
+    let duration: Double = 15.0
     @State var zIndexes : [Double] = [0, 1, 2, 3, 4]
     
     var body: some View {
@@ -21,11 +21,11 @@ struct AnimatingRandomShapesView: View {
             ZStack {
                 ForEach(0 ..< noBoxes) { i in
                     RandomBoxShape(rect: CGRect(x: 0, y: 0, width: geometry.size.width * 2, height: geometry.size.height),
-                                   delay: Double(i) * delayInterval, duration: duration, onTimerEnd: {
+                                   delay: Double(i) * delayInterval,
+                                   duration: duration, onTimerEnd: { shapeNo in
                                     self.incrementZIndexes()
-                                   }).zIndex(zIndexes[i])
+                                   }, shapeNo: i).zIndex(zIndexes[i])
                 }
-                
             }
         }
     }
@@ -39,6 +39,6 @@ struct AnimatingRandomShapesView: View {
             }
         }
         
-        print("zIndexes: \(zIndexes)")
+        //print("zIndexes: \(zIndexes)")
     }
 }
