@@ -9,7 +9,11 @@ import SwiftUI
 
 struct RandomBoxShape: View {
     
-    var points: RandomBoxPointData
+    @State var points = RandomBoxPointData(rect: CGRect.zero)
+    @State var position: CGFloat = 200
+    var rect: CGRect
+    let delay: Double
+    let duration: Double
     
     var body: some View {
         Path { path in
@@ -27,6 +31,18 @@ struct RandomBoxShape: View {
         .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]),
                               startPoint: .top,
                               endPoint: .bottom))
+        .position(x: 0, y: position)
+        .onAppear {
+            self.points = RandomBoxPointData(rect: rect)
+            Timer.scheduledTimer(withTimeInterval: self.delay, repeats: false) { _ in
+                Timer.scheduledTimer(withTimeInterval: self.duration, repeats: true) { _ in
+                    position = rect.size.height * 1.5
+                    withAnimation(Animation.linear(duration: self.duration)) {
+                        position = -100
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -36,6 +52,6 @@ struct BoxWithRandomTopLine_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        RandomBoxShape(points: pointData)
+        RandomBoxShape(rect: CGRect.zero, delay: 0, duration: 5.0)
     }
 }

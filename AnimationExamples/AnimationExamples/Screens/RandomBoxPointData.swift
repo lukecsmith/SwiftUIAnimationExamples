@@ -15,8 +15,8 @@ struct RandomBoxPointData {
     var bottomLeft: CGPoint
     
     init(rect: CGRect) {
-        self.bottomRight = CGPoint(x: rect.size.width, y: rect.size.height)
-        self.bottomLeft = CGPoint(x: 0, y: rect.size.height)
+        self.bottomRight = CGPoint(x: rect.size.width, y: rect.size.height * 2)
+        self.bottomLeft = CGPoint(x: 0, y: rect.size.height * 2)
         self.topLinePoints = self.createTopLinePoints(rect: rect, noOfPointsInTopLine: 7, verticalRandomization: 50, horizontalRandomization: 0)
         self.topLineControlPoints = CubicCurveAlgorithm().controlPointsFromPoints(dataPoints: self.topLinePoints)
     }

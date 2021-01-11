@@ -14,7 +14,7 @@
 		07446CE5256BBA1D0023FBFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07446CE4256BBA1D0023FBFD /* Assets.xcassets */; };
 		07446CE8256BBA1D0023FBFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07446CE7256BBA1D0023FBFD /* Preview Assets.xcassets */; };
 		07446CF1256BBC580023FBFD /* AnimatingCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */; };
-		0768FFBF25AC389900523E7F /* AnimatingRandomShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFBE25AC389900523E7F /* AnimatingRandomShapeView.swift */; };
+		0768FFBF25AC389900523E7F /* AnimatingRandomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFBE25AC389900523E7F /* AnimatingRandomShapesView.swift */; };
 		0768FFC225AC601800523E7F /* RandomBoxShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFC125AC601800523E7F /* RandomBoxShape.swift */; };
 		0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */; };
 		07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */; };
@@ -32,7 +32,7 @@
 		07446CE7256BBA1D0023FBFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07446CE9256BBA1D0023FBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingCirclesView.swift; sourceTree = "<group>"; };
-		0768FFBE25AC389900523E7F /* AnimatingRandomShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingRandomShapeView.swift; sourceTree = "<group>"; };
+		0768FFBE25AC389900523E7F /* AnimatingRandomShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingRandomShapesView.swift; sourceTree = "<group>"; };
 		0768FFC125AC601800523E7F /* RandomBoxShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxShape.swift; sourceTree = "<group>"; };
 		0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxPointData.swift; sourceTree = "<group>"; };
 		07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawingTest.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 				07446CE2256BBA1A0023FBFD /* ContentView.swift */,
 				07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */,
 				07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */,
-				0768FFBE25AC389900523E7F /* AnimatingRandomShapeView.swift */,
+				0768FFBE25AC389900523E7F /* AnimatingRandomShapesView.swift */,
 				0768FFC125AC601800523E7F /* RandomBoxShape.swift */,
 				0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */,
 			);
@@ -191,7 +191,7 @@
 				07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */,
 				07446CE1256BBA1A0023FBFD /* AnimationExamplesApp.swift in Sources */,
 				07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */,
-				0768FFBF25AC389900523E7F /* AnimatingRandomShapeView.swift in Sources */,
+				0768FFBF25AC389900523E7F /* AnimatingRandomShapesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
