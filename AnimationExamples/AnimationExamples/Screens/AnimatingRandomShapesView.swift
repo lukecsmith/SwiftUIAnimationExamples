@@ -10,7 +10,7 @@ import SwiftUI
 struct AnimatingRandomShapesView: View {
     
     let noBoxes = 5
-    let duration: Double = 15.0
+    let duration: Double = 20.0
     @State var zIndexes : [Double] = [0, 1, 2, 3, 4]
     
     var body: some View {
@@ -38,7 +38,5 @@ struct AnimatingRandomShapesView: View {
                 zIndexes[i] = 4
             }
         }
-        
-        //print("zIndexes: \(zIndexes)")
     }
 }

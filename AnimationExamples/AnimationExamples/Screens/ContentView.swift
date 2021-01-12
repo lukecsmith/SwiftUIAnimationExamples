@@ -20,12 +20,13 @@ struct ContentView: View {
                                                                  finalScale: 1.0)) {
                     Text("Circles view")
                 }
-                NavigationLink(destination: LineDrawingTest()) {
-                    Text("Line Drawing")
-                }
                 NavigationLink(destination: AnimatingShapesAsMenuBackground()) {
                     Text("Random Shapes")
                 }
+                /*
+                NavigationLink(destination: LineDrawingTest()) {
+                    Text("Line Drawing")
+                }*/
             }
         }
     }

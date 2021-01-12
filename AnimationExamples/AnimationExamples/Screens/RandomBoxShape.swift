@@ -35,13 +35,11 @@ struct RandomBoxShape: View {
                               endPoint: .bottom))
         .position(x: 0, y: position)
         .onAppear {
-            position = rect.size.height * 1.3
+            position = -300
             self.updatePoints(rect: rect)
             Timer.scheduledTimer(withTimeInterval: self.delay, repeats: false) { _ in
-                //print("Creating repeat timer (obj with delay \(self.delay)")
                 timerAction()
                 Timer.scheduledTimer(withTimeInterval: self.duration, repeats: true) { _ in
-                    //print("repeat timer triggered for obj with delay: \(self.delay)")
                     timerAction()
                 }
             }
@@ -50,7 +48,7 @@ struct RandomBoxShape: View {
     
     func timerAction() {
         self.onTimerEnd(shapeNo)
-        position = rect.size.height * 1.5
+        position = rect.size.height * 1.3
         withAnimation(Animation.linear(duration: self.duration)) {
             position = -300
         }

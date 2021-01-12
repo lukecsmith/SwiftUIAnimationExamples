@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07114EAB259F14C0006841B3 /* BackgroundShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07114EAA259F14C0006841B3 /* BackgroundShape.swift */; };
 		07114EB3259F2E35006841B3 /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07114EB2259F2E35006841B3 /* CubicCurveAlgorithm.swift */; };
 		07446CE1256BBA1A0023FBFD /* AnimationExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07446CE0256BBA1A0023FBFD /* AnimationExamplesApp.swift */; };
 		07446CE3256BBA1A0023FBFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07446CE2256BBA1A0023FBFD /* ContentView.swift */; };
@@ -25,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07114EAA259F14C0006841B3 /* BackgroundShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundShape.swift; sourceTree = "<group>"; };
 		07114EB2259F2E35006841B3 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		07446CDD256BBA1A0023FBFD /* AnimationExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07446CE0256BBA1A0023FBFD /* AnimationExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExamplesApp.swift; sourceTree = "<group>"; };
@@ -62,9 +60,9 @@
 				07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */,
 				07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */,
 				0768FFBE25AC389900523E7F /* AnimatingRandomShapesView.swift */,
+				07A3DC8E25AD0C420068CD8B /* AnimatingShapesAsMenuBackground.swift */,
 				0768FFC125AC601800523E7F /* RandomBoxShape.swift */,
 				0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */,
-				07A3DC8E25AD0C420068CD8B /* AnimatingShapesAsMenuBackground.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				07A3DC9125AD0CD80068CD8B /* Cell.swift */,
-				07114EAA259F14C0006841B3 /* BackgroundShape.swift */,
 				07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */,
 				07F91EE2258261AB0042A147 /* CheckBoxView.swift */,
 				07114EB2259F2E35006841B3 /* CubicCurveAlgorithm.swift */,
@@ -191,7 +188,6 @@
 				0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */,
 				07114EB3259F2E35006841B3 /* CubicCurveAlgorithm.swift in Sources */,
 				0768FFC225AC601800523E7F /* RandomBoxShape.swift in Sources */,
-				07114EAB259F14C0006841B3 /* BackgroundShape.swift in Sources */,
 				07A3DC9225AD0CD80068CD8B /* Cell.swift in Sources */,
 				07446CE3256BBA1A0023FBFD /* ContentView.swift in Sources */,
 				07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */,
