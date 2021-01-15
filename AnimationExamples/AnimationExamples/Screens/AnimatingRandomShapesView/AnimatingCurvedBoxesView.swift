@@ -1,5 +1,5 @@
 //
-//  AnimatingRandomShapesView.swift
+//  AnimatingCurvedBoxesView.swift
 //  AnimationExamples
 //
 //  Created by Luke Smith on 11/01/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AnimatingRandomShapesView: View {
+struct AnimatingCurvedBoxesView: View {
     
     let noBoxes = 5
     let duration: Double = 20.0
@@ -20,11 +20,14 @@ struct AnimatingRandomShapesView: View {
         GeometryReader { geometry in
             ZStack {
                 ForEach(0 ..< noBoxes) { i in
-                    RandomBoxShape(rect: CGRect(x: 0, y: 0, width: geometry.size.width * 2, height: geometry.size.height),
+                    let rect = CGRect(x: 0, y: 0, width: geometry.size.width * 2, height: geometry.size.height)
+                    RandomBoxShape(rect: rect,
                                    delay: Double(i) * delayInterval,
-                                   duration: duration, onTimerEnd: { shapeNo in
+                                   duration: duration,
+                                   onTimerEnd: { shapeNo in
                                     self.incrementZIndexes()
-                                   }, shapeNo: i).zIndex(zIndexes[i])
+                                   },
+                                   shapeNo: i).zIndex(zIndexes[i])
                 }
             }
         }

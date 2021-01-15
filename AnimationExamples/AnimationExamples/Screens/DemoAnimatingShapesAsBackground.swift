@@ -1,5 +1,5 @@
 //
-//  AnimatingShapesAsMenuBackground.swift
+//  DemoAnimatingShapesAsBackground.swift
 //  AnimationExamples
 //
 //  Created by Luke Smith on 11/01/2021.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct AnimatingShapesAsMenuBackground: View {
+struct DemoAnimatingShapesAsBackground: View {
     var body: some View {
         ZStack {
-            AnimatingRandomShapesView()
+            AnimatingCurvedBoxesView()
             VStack {
                 Cell(text: "Option 1").padding()
                 Cell(text: "Option 2").padding()
@@ -20,8 +20,8 @@ struct AnimatingShapesAsMenuBackground: View {
     }
 }
 
-struct AnimatingShapesAsMenuBackground_Previews: PreviewProvider {
+struct DemoAnimatingShapesAsBackground_Previews: PreviewProvider {
     static var previews: some View {
-        AnimatingShapesAsMenuBackground()
+        DemoAnimatingShapesAsBackground()
     }
 }

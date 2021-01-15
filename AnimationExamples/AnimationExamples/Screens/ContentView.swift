@@ -20,7 +20,7 @@ struct ContentView: View {
                                                                  finalScale: 1.0)) {
                     Text("Circles view")
                 }
-                NavigationLink(destination: AnimatingShapesAsMenuBackground()) {
+                NavigationLink(destination: DemoAnimatingShapesAsBackground()) {
                     Text("Random Shapes")
                 }
                 /*
