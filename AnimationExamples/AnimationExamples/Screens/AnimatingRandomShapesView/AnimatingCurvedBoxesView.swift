@@ -17,18 +17,15 @@ struct AnimatingCurvedBoxesView: View {
         
         let delayInterval = duration / Double(noBoxes)
         
-        GeometryReader { geometry in
-            ZStack {
-                ForEach(0 ..< noBoxes) { i in
-                    let rect = CGRect(x: 0, y: 0, width: geometry.size.width * 2, height: geometry.size.height)
-                    RandomBoxShape(rect: rect,
-                                   delay: Double(i) * delayInterval,
-                                   duration: duration,
-                                   onTimerEnd: { shapeNo in
-                                    self.incrementZIndexes()
-                                   },
-                                   shapeNo: i).zIndex(zIndexes[i])
-                }
+        ZStack {
+            ForEach(0 ..< noBoxes) { i in
+                
+                AnimationContainerView(delay: Double(i) * delayInterval,
+                               duration: duration,
+                               onTimerEnd: { shapeNo in
+                                self.incrementZIndexes()
+                               },
+                               shapeNo: i).zIndex(zIndexes[i])
             }
         }
     }

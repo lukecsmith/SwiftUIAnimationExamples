@@ -18,6 +18,7 @@
 		0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */; };
 		07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */; };
 		07A3DC9225AD0CD80068CD8B /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3DC9125AD0CD80068CD8B /* Cell.swift */; };
+		07DE121325B25A4E00ECCD1F /* AnimationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE121225B25A4E00ECCD1F /* AnimationContainerView.swift */; };
 		07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */; };
 		07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE2258261AB0042A147 /* CheckBoxView.swift */; };
 		07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */; };
@@ -37,6 +38,7 @@
 		0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxPointData.swift; sourceTree = "<group>"; };
 		07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAnimatingShapesAsBackground.swift; sourceTree = "<group>"; };
 		07A3DC9125AD0CD80068CD8B /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		07DE121225B25A4E00ECCD1F /* AnimationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationContainerView.swift; sourceTree = "<group>"; };
 		07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawingTest.swift; sourceTree = "<group>"; };
 		07F91EE2258261AB0042A147 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxViewField.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				0768FFBE25AC389900523E7F /* AnimatingCurvedBoxesView.swift */,
+				07DE121225B25A4E00ECCD1F /* AnimationContainerView.swift */,
 				0768FFC125AC601800523E7F /* RandomBoxShape.swift */,
 				0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */,
 				07114EB2259F2E35006841B3 /* CubicCurveAlgorithm.swift */,
@@ -195,6 +198,7 @@
 				07446CF1256BBC580023FBFD /* AnimatingCirclesView.swift in Sources */,
 				0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */,
 				07114EB3259F2E35006841B3 /* CubicCurveAlgorithm.swift in Sources */,
+				07DE121325B25A4E00ECCD1F /* AnimationContainerView.swift in Sources */,
 				0768FFC225AC601800523E7F /* RandomBoxShape.swift in Sources */,
 				07A3DC9225AD0CD80068CD8B /* Cell.swift in Sources */,
 				07446CE3256BBA1A0023FBFD /* ContentView.swift in Sources */,
