@@ -13,12 +13,11 @@
 		07446CE5256BBA1D0023FBFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07446CE4256BBA1D0023FBFD /* Assets.xcassets */; };
 		07446CE8256BBA1D0023FBFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07446CE7256BBA1D0023FBFD /* Preview Assets.xcassets */; };
 		07446CF1256BBC580023FBFD /* AnimatingCirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */; };
-		0768FFBF25AC389900523E7F /* AnimatingCurvedBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFBE25AC389900523E7F /* AnimatingCurvedBoxesView.swift */; };
 		0768FFC225AC601800523E7F /* RandomBoxShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFC125AC601800523E7F /* RandomBoxShape.swift */; };
 		0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */; };
 		07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */; };
 		07A3DC9225AD0CD80068CD8B /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3DC9125AD0CD80068CD8B /* Cell.swift */; };
-		07DE121325B25A4E00ECCD1F /* AnimationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE121225B25A4E00ECCD1F /* AnimationContainerView.swift */; };
+		07DE121C25B3900800ECCD1F /* AnimatingRandomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE121B25B3900800ECCD1F /* AnimatingRandomShapesView.swift */; };
 		07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */; };
 		07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE2258261AB0042A147 /* CheckBoxView.swift */; };
 		07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */; };
@@ -33,12 +32,11 @@
 		07446CE7256BBA1D0023FBFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07446CE9256BBA1D0023FBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingCirclesView.swift; sourceTree = "<group>"; };
-		0768FFBE25AC389900523E7F /* AnimatingCurvedBoxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCurvedBoxesView.swift; sourceTree = "<group>"; };
 		0768FFC125AC601800523E7F /* RandomBoxShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxShape.swift; sourceTree = "<group>"; };
 		0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxPointData.swift; sourceTree = "<group>"; };
 		07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAnimatingShapesAsBackground.swift; sourceTree = "<group>"; };
 		07A3DC9125AD0CD80068CD8B /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		07DE121225B25A4E00ECCD1F /* AnimationContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationContainerView.swift; sourceTree = "<group>"; };
+		07DE121B25B3900800ECCD1F /* AnimatingRandomShapesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingRandomShapesView.swift; sourceTree = "<group>"; };
 		07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawingTest.swift; sourceTree = "<group>"; };
 		07F91EE2258261AB0042A147 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxViewField.swift; sourceTree = "<group>"; };
@@ -80,8 +78,7 @@
 		07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */ = {
 			isa = PBXGroup;
 			children = (
-				0768FFBE25AC389900523E7F /* AnimatingCurvedBoxesView.swift */,
-				07DE121225B25A4E00ECCD1F /* AnimationContainerView.swift */,
+				07DE121B25B3900800ECCD1F /* AnimatingRandomShapesView.swift */,
 				0768FFC125AC601800523E7F /* RandomBoxShape.swift */,
 				0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */,
 				07114EB2259F2E35006841B3 /* CubicCurveAlgorithm.swift */,
@@ -198,16 +195,15 @@
 				07446CF1256BBC580023FBFD /* AnimatingCirclesView.swift in Sources */,
 				0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */,
 				07114EB3259F2E35006841B3 /* CubicCurveAlgorithm.swift in Sources */,
-				07DE121325B25A4E00ECCD1F /* AnimationContainerView.swift in Sources */,
 				0768FFC225AC601800523E7F /* RandomBoxShape.swift in Sources */,
 				07A3DC9225AD0CD80068CD8B /* Cell.swift in Sources */,
 				07446CE3256BBA1A0023FBFD /* ContentView.swift in Sources */,
+				07DE121C25B3900800ECCD1F /* AnimatingRandomShapesView.swift in Sources */,
 				07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */,
 				07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */,
 				07446CE1256BBA1A0023FBFD /* AnimationExamplesApp.swift in Sources */,
 				07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */,
 				07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */,
-				0768FFBF25AC389900523E7F /* AnimatingCurvedBoxesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

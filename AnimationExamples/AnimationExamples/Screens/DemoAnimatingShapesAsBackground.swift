@@ -10,7 +10,7 @@ import SwiftUI
 struct DemoAnimatingShapesAsBackground: View {
     var body: some View {
         ZStack {
-            AnimatingCurvedBoxesView()
+            AnimatingRandomShapesView()
             VStack {
                 Cell(text: "Option 1").padding()
                 Cell(text: "Option 2").padding()
