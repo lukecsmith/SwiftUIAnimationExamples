@@ -58,24 +58,4 @@ struct RandomBoxPointData {
         let adjustedPoint = CGPoint(x: start.x + CGFloat(xAdjust), y: start.y + CGFloat(yAdjust))
         return adjustedPoint
     }
-    
-    func curvedPoints(points: [CGPoint]) {
-        
-        let cubicCurveAlgorithm = CubicCurveAlgorithm()
-        
-        let controlPoints = cubicCurveAlgorithm.controlPointsFromPoints(dataPoints: points)
-        
-        let linePath = UIBezierPath()
-        
-        for i in 0..<points.count {
-            let point = points[i];
-            
-            if i==0 {
-                linePath.move(to: point)
-            } else {
-                let segment = controlPoints[i-1]
-                linePath.addCurve(to: point, controlPoint1: segment.controlPoint1, controlPoint2: segment.controlPoint2)
-            }
-        }
-    }
 }

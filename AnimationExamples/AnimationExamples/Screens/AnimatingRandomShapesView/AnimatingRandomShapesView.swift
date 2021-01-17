@@ -31,19 +31,6 @@ struct AnimatingRandomShapesView: View {
         }
     }
     
-    func colorsForBoxNo(_ boxNo: Int) -> [Color] {
-        switch boxNo {
-        case 0, 3:
-            return [ColorPalette.gradient1a.swiftUIColor, ColorPalette.gradient1b.swiftUIColor]
-        case 1, 4:
-            return [ColorPalette.gradient2a.swiftUIColor, ColorPalette.gradient2b.swiftUIColor]
-        case 2:
-            return [ColorPalette.gradient3a.swiftUIColor, ColorPalette.gradient3b.swiftUIColor]
-        default:
-            return [.red, .blue]
-        }
-    }
-    
     func createAnimations(boxNo: Int, screenHeight: CGFloat) {
         yPositions[boxNo] = screenHeight
         let startDelay = (duration / Double(noBoxes)) * Double(boxNo)
@@ -60,6 +47,19 @@ struct AnimatingRandomShapesView: View {
                     yPositions[boxNo] = 0 - boxHeight * 1.75
                 }
             }
+        }
+    }
+    
+    func colorsForBoxNo(_ boxNo: Int) -> [Color] {
+        switch boxNo {
+        case 0, 3:
+            return [ColorPalette.gradient1a.swiftUIColor, ColorPalette.gradient1b.swiftUIColor]
+        case 1, 4:
+            return [ColorPalette.gradient2a.swiftUIColor, ColorPalette.gradient2b.swiftUIColor]
+        case 2:
+            return [ColorPalette.gradient3a.swiftUIColor, ColorPalette.gradient3b.swiftUIColor]
+        default:
+            return [.red, .blue]
         }
     }
     
