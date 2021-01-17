@@ -12,25 +12,27 @@ struct RandomBoxShape: View {
     @State var points = RandomBoxPointData(rect: CGRect.zero)
     
     var body: some View {
-        GeometryReader { geometry in
-            Path { path in
-                path.move(to: points.topLinePoints[0])
-                
-                for i in 1...points.topLinePoints.count - 1 {
-                    let point = points.topLinePoints[i]
-                    let segment = points.topLineControlPoints[i - 1]
-                    path.addCurve(to: point, control1: segment.controlPoint1, control2: segment.controlPoint2)
+        ZStack {
+            GeometryReader { geometry in
+                Path { path in
+                    path.move(to: points.topLinePoints[0])
+                    
+                    for i in 1...points.topLinePoints.count - 1 {
+                        let point = points.topLinePoints[i]
+                        let segment = points.topLineControlPoints[i - 1]
+                        path.addCurve(to: point, control1: segment.controlPoint1, control2: segment.controlPoint2)
+                    }
+                    path.addLine(to: points.bottomRight)
+                    path.addLine(to: points.bottomLeft)
+                    path.addLine(to: points.topLinePoints[0])
                 }
-                path.addLine(to: points.bottomRight)
-                path.addLine(to: points.bottomLeft)
-                path.addLine(to: points.topLinePoints[0])
-            }
-            .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]),
-                                  startPoint: .top,
-                                  endPoint: .bottom))
-            .onAppear {
-                let rect = CGRect(x: 0, y: 0, width: geometry.size.width * 2, height: geometry.size.height)
-                self.updatePoints(rect: rect)
+                .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]),
+                                      startPoint: .top,
+                                      endPoint: .bottom))
+                .onAppear {
+                    let rect = CGRect(x: 0, y: 0, width: geometry.size.width * 2, height: geometry.size.height)
+                    self.updatePoints(rect: rect)
+                }
             }
         }
     }
