@@ -10,7 +10,7 @@ import SwiftUI
 struct AnimatingRandomShapesView: View {
     
     let noBoxes = 5
-    let duration: Double = 5.0
+    let duration: Double = 20.0
     let boxHeight:CGFloat = 200.0
     @State var zIndexes : [Double] = [0, 1, 2, 3, 4]
     @State var yPositions: [CGFloat] = [0, 0, 0, 0, 0]
@@ -19,7 +19,7 @@ struct AnimatingRandomShapesView: View {
         GeometryReader { geometry in
             ZStack {
                 ForEach(0 ..< noBoxes) { i in
-                    RandomBoxShape()
+                    RandomBoxShape(gradientColors: self.colorsForBoxNo(i))
                         .frame(width: geometry.size.width, height: boxHeight)
                         .position(x: 0, y: yPositions[i])
                         .zIndex(zIndexes[i])
@@ -28,6 +28,19 @@ struct AnimatingRandomShapesView: View {
                         }
                 }
             }
+        }
+    }
+    
+    func colorsForBoxNo(_ boxNo: Int) -> [Color] {
+        switch boxNo {
+        case 0, 3:
+            return [ColorPalette.gradient1a.swiftUIColor, ColorPalette.gradient1b.swiftUIColor]
+        case 1, 4:
+            return [ColorPalette.gradient2a.swiftUIColor, ColorPalette.gradient2b.swiftUIColor]
+        case 2:
+            return [ColorPalette.gradient3a.swiftUIColor, ColorPalette.gradient3b.swiftUIColor]
+        default:
+            return [.red, .blue]
         }
     }
     

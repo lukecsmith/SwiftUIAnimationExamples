@@ -10,6 +10,7 @@ import SwiftUI
 struct RandomBoxShape: View {
     
     @State var points = RandomBoxPointData(rect: CGRect.zero)
+    var gradientColors: [Color]
     
     var body: some View {
         ZStack {
@@ -26,7 +27,7 @@ struct RandomBoxShape: View {
                     path.addLine(to: points.bottomLeft)
                     path.addLine(to: points.topLinePoints[0])
                 }
-                .fill(LinearGradient(gradient: Gradient(colors: [.red, .blue]),
+                .fill(LinearGradient(gradient: Gradient(colors: gradientColors),
                                       startPoint: .top,
                                       endPoint: .bottom))
                 .onAppear {
@@ -48,6 +49,6 @@ struct BoxWithRandomTopLine_Previews: PreviewProvider {
     
     static var previews: some View {
         
-        RandomBoxShape()
+        RandomBoxShape(gradientColors: [.red, .blue])
     }
 }
