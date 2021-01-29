@@ -32,7 +32,8 @@ struct AnimatingRandomShapesView: View {
     }
     
     func createAnimations(boxNo: Int, screenHeight: CGFloat) {
-        yPositions[boxNo] = screenHeight
+        //crap, starting positions need work ..
+        yPositions[boxNo] = screenHeight * ((screenHeight / CGFloat(noBoxes)) * CGFloat(boxNo))
         let startDelay = (duration / Double(noBoxes)) * Double(boxNo)
         //delay the start so the boxes are staggered (one shot delay)
         Timer.scheduledTimer(withTimeInterval: startDelay, repeats: false) { _ in
