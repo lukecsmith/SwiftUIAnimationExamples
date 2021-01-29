@@ -11,13 +11,10 @@ struct ErrorView: View {
     
     var text: LocalizedStringKey
     @Binding var showError: Bool
-    let completion: () -> Void
-    let animTime = 0.4
     
     var body: some View {
         VStack {
             if showError {
-                
                 Text(text)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
@@ -31,13 +28,10 @@ struct ErrorView: View {
             Spacer()
         }
     }
-    
 }
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        ErrorView(text: "The server appears to be unavailable.  Please try again later", showError: .constant(true)) {
-            print("Complete")
-        }
+        ErrorView(text: "The server appears to be unavailable.  Please try again later", showError: .constant(true))
     }
 }

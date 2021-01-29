@@ -65,9 +65,9 @@
 				07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */,
 				07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */,
 				07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */,
-				07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */,
 				07B5858525C4435400798635 /* TransitioningErrorView.swift */,
 				07B5858825C4438B00798635 /* ErrorView.swift */,
+				07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */,
 			);
 			path = Screens;
 			sourceTree = "<group>";

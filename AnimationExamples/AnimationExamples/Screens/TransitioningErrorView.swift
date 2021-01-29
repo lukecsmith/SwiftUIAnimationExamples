@@ -14,12 +14,22 @@ struct TransitioningErrorView: View {
     var body: some View {
         ZStack {
             Button("Show Error") {
-                withAnimation {
-                    self.showError.toggle()
+                if self.showError == false {
+                    self.triggerErrorAnim(completion: { print("complete")})
                 }
             }
-            ErrorView(text: "The server appears to be unavailable.  Please try again later", showError: $showError) {
-             print("Complete")
+            ErrorView(text: "The server appears to be unavailable.  Please try again later", showError: $showError)
+        }
+    }
+    
+    func triggerErrorAnim(completion: @escaping () -> Void) {
+        withAnimation {
+            self.showError = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                withAnimation {
+                    self.showError = false
+                    completion()
+                }
             }
         }
     }
