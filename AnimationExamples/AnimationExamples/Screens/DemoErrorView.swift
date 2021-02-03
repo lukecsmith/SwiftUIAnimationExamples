@@ -1,5 +1,5 @@
 //
-//  TestErrorView.swift
+//  DemoErrorView.swift
 //  AnimationExamples
 //
 //  Created by Luke Smith on 29/01/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestErrorView: View {
+struct DemoErrorView: View {
     
     @State var errorText = ""
     
@@ -29,8 +29,8 @@ struct TestErrorView: View {
     }
 }
 
-struct TestErrorView_Previews: PreviewProvider {
+struct DemoErrorView_Previews: PreviewProvider {
     static var previews: some View {
-        TestErrorView()
+        DemoErrorView()
     }
 }

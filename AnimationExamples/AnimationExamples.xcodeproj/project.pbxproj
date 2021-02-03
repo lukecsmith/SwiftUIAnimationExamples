@@ -17,7 +17,7 @@
 		0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */; };
 		07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */; };
 		07A3DC9225AD0CD80068CD8B /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3DC9125AD0CD80068CD8B /* Cell.swift */; };
-		07B5858625C4435400798635 /* TestErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5858525C4435400798635 /* TestErrorView.swift */; };
+		07B5858625C4435400798635 /* DemoErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5858525C4435400798635 /* DemoErrorView.swift */; };
 		07B5858925C4438B00798635 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B5858825C4438B00798635 /* ErrorView.swift */; };
 		07DE121C25B3900800ECCD1F /* AnimatingRandomShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE121B25B3900800ECCD1F /* AnimatingRandomShapesView.swift */; };
 		07DE122225B4C05D00ECCD1F /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE122125B4C05D00ECCD1F /* ColorPalette.swift */; };
@@ -39,7 +39,7 @@
 		0768FFC825AC77EB00523E7F /* RandomBoxPointData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBoxPointData.swift; sourceTree = "<group>"; };
 		07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAnimatingShapesAsBackground.swift; sourceTree = "<group>"; };
 		07A3DC9125AD0CD80068CD8B /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		07B5858525C4435400798635 /* TestErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestErrorView.swift; sourceTree = "<group>"; };
+		07B5858525C4435400798635 /* DemoErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoErrorView.swift; sourceTree = "<group>"; };
 		07B5858825C4438B00798635 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		07DE121B25B3900800ECCD1F /* AnimatingRandomShapesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingRandomShapesView.swift; sourceTree = "<group>"; };
 		07DE122125B4C05D00ECCD1F /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */,
 				07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */,
 				07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */,
-				07B5858525C4435400798635 /* TestErrorView.swift */,
+				07B5858525C4435400798635 /* DemoErrorView.swift */,
 				07B5858825C4438B00798635 /* ErrorView.swift */,
 				07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */,
 			);
@@ -210,7 +210,7 @@
 				07DE121C25B3900800ECCD1F /* AnimatingRandomShapesView.swift in Sources */,
 				07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */,
 				07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */,
-				07B5858625C4435400798635 /* TestErrorView.swift in Sources */,
+				07B5858625C4435400798635 /* DemoErrorView.swift in Sources */,
 				07B5858925C4438B00798635 /* ErrorView.swift in Sources */,
 				07DE122225B4C05D00ECCD1F /* ColorPalette.swift in Sources */,
 				07446CE1256BBA1A0023FBFD /* AnimationExamplesApp.swift in Sources */,
