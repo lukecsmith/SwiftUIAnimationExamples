@@ -23,7 +23,7 @@ struct ContentView: View {
                 NavigationLink(destination: DemoAnimatingShapesAsBackground()) {
                     Text("Random Shapes")
                 }
-                NavigationLink(destination: TransitioningErrorView()) {
+                NavigationLink(destination: TestErrorView()) {
                     Text("Transitioning Error View")
                 }
                 /*
