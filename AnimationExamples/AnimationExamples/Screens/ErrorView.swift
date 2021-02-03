@@ -39,6 +39,7 @@ struct ErrorView: View {
     
     var body: some View {
         VStack {
+            //only show the error view if the visibleErrorText String is not empty:
             if visibleErrorText.count > 0 {
                 HStack(alignment: .center) {
                     Spacer()
@@ -60,6 +61,8 @@ struct ErrorView: View {
                                                 .combined(with: AnyTransition.move(edge: .top))))
             }
             Spacer()
+            //check the @Binding text property for changes.  if one comes in, set it on our visibleErrorText property
+            //then create a timer to make the errorview disappear in 3 seconds.
         }.onChange(of: text) { newValue in
             withAnimation {
                 self.visibleErrorText = newValue
@@ -71,7 +74,6 @@ struct ErrorView: View {
                     }
                 }
             }
-            
         }
     }
 }
