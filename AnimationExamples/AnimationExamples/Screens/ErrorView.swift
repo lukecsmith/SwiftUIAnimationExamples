@@ -8,9 +8,28 @@
 import SwiftUI
 
 /**
+ ViewModifier that allows us to apply this errorview to any view using .errorView(text:..)
+ */
+extension View {
+    func errorView(text: Binding<String>) -> some View {
+        self.modifier(ErrorViewModifier(text: text))
+    }
+}
+
+struct ErrorViewModifier: ViewModifier {
+    
+    @Binding var text: String
+    func body(content: Content) -> some View {
+        ZStack {
+            content
+            ErrorView(text: $text)
+        }
+    }
+}
+
+/**
  The error text is passed in via the @Binding text property.  when passed in, the .onChange closure is fired below, which sets the visibleErrorText property with the incoming text, in turn making the red text box appear and show the text.  At this time a timer starts, which will clear the visible text and the passed in text property too so that the red box disappears.
  */
-
 struct ErrorView: View {
     
     @Binding var text: String
@@ -62,22 +81,3 @@ struct ErrorView_Previews: PreviewProvider {
         ErrorView(text: .constant("Test Error Text"))
     }
 }
-
-
-extension View {
-    func errorView(text: Binding<String>) -> some View {
-        self.modifier(ErrorViewModifier(text: text))
-    }
-}
-
-struct ErrorViewModifier: ViewModifier {
-    
-    @Binding var text: String
-    func body(content: Content) -> some View {
-        ZStack {
-            content
-            ErrorView(text: $text)
-        }
-    }
-}
-

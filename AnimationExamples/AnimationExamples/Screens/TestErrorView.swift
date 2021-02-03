@@ -13,7 +13,7 @@ struct TestErrorView: View {
     
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 20.0) {
                 Button("Error 1") {
                     self.errorText = "First Error"
                 }
