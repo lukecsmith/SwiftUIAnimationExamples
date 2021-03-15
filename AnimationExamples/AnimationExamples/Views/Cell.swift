@@ -6,9 +6,6 @@
 //  Copyright © 2020 Luke Smith. All rights reserved.
 //
 
-broken commit 1
-
-
 import SwiftUI
 
 struct Cell: View {
