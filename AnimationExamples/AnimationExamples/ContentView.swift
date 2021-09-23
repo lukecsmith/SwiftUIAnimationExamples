@@ -26,6 +26,12 @@ struct ContentView: View {
                 NavigationLink(destination: DemoErrorView()) {
                     Text("Transitioning Error View")
                 }
+                NavigationLink(destination: AnimatingLineView()) {
+                    Text("Animating Line View")
+                }
+                NavigationLink(destination: AllPointsAnimatingLineView()) {
+                    Text("All Points Animating Line View")
+                }
                 /*
                 NavigationLink(destination: LineDrawingTest()) {
                     Text("Line Drawing")

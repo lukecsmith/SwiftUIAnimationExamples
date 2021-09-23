@@ -24,6 +24,11 @@
 		07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */; };
 		07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE2258261AB0042A147 /* CheckBoxView.swift */; };
 		07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */; };
+		A3B80F2826FBC83B002780F1 /* AnimatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */; };
+		A3B80F2A26FC88CE002780F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2926FC88CE002780F1 /* Extensions.swift */; };
+		A3B80F2C26FCA29F002780F1 /* AllPointsAnimatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */; };
+		A3B80F2F26FCA344002780F1 /* AnimatableVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2E26FCA344002780F1 /* AnimatableVector.swift */; };
+		A3B80F3126FCA361002780F1 /* AnimatableGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F3026FCA361002780F1 /* AnimatableGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawingTest.swift; sourceTree = "<group>"; };
 		07F91EE2258261AB0042A147 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxViewField.swift; sourceTree = "<group>"; };
+		A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingLineView.swift; sourceTree = "<group>"; };
+		A3B80F2926FC88CE002780F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPointsAnimatingLineView.swift; sourceTree = "<group>"; };
+		A3B80F2E26FCA344002780F1 /* AnimatableVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableVector.swift; sourceTree = "<group>"; };
+		A3B80F3026FCA361002780F1 /* AnimatableGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,8 @@
 				07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */,
 				07B5858525C4435400798635 /* DemoErrorView.swift */,
 				07B5858825C4438B00798635 /* ErrorView.swift */,
+				A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */,
+				A3B80F2D26FCA32F002780F1 /* AllPointsAnimatingLineView */,
 				07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */,
 			);
 			path = Screens;
@@ -120,6 +132,7 @@
 				07446CE4256BBA1D0023FBFD /* Assets.xcassets */,
 				07446CE9256BBA1D0023FBFD /* Info.plist */,
 				07446CE6256BBA1D0023FBFD /* Preview Content */,
+				A3B80F2926FC88CE002780F1 /* Extensions.swift */,
 			);
 			path = AnimationExamples;
 			sourceTree = "<group>";
@@ -130,6 +143,16 @@
 				07446CE7256BBA1D0023FBFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3B80F2D26FCA32F002780F1 /* AllPointsAnimatingLineView */ = {
+			isa = PBXGroup;
+			children = (
+				A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */,
+				A3B80F2E26FCA344002780F1 /* AnimatableVector.swift */,
+				A3B80F3026FCA361002780F1 /* AnimatableGraph.swift */,
+			);
+			path = AllPointsAnimatingLineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +232,17 @@
 				07446CE3256BBA1A0023FBFD /* ContentView.swift in Sources */,
 				07DE121C25B3900800ECCD1F /* AnimatingRandomShapesView.swift in Sources */,
 				07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */,
+				A3B80F3126FCA361002780F1 /* AnimatableGraph.swift in Sources */,
 				07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */,
 				07B5858625C4435400798635 /* DemoErrorView.swift in Sources */,
+				A3B80F2F26FCA344002780F1 /* AnimatableVector.swift in Sources */,
 				07B5858925C4438B00798635 /* ErrorView.swift in Sources */,
 				07DE122225B4C05D00ECCD1F /* ColorPalette.swift in Sources */,
 				07446CE1256BBA1A0023FBFD /* AnimationExamplesApp.swift in Sources */,
+				A3B80F2826FBC83B002780F1 /* AnimatingLineView.swift in Sources */,
+				A3B80F2A26FC88CE002780F1 /* Extensions.swift in Sources */,
 				07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */,
+				A3B80F2C26FCA29F002780F1 /* AllPointsAnimatingLineView.swift in Sources */,
 				07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
