@@ -11,7 +11,7 @@ import SwiftUI
 struct AnimatableGraph: Shape {
     
     var controlPoints: AnimatableVector
-    var closedArea: Bool
+    //var closedArea: Bool
     var curved: Bool
     
     var animatableData: AnimatableVector {
@@ -49,12 +49,12 @@ struct AnimatableGraph: Shape {
                     i += 1
                 }
             }
-            
+            /*
             if (self.closedArea) { // closed area below the chart line
                 path.addLine(to: CGPoint(x: rect.width, y: rect.height))
                 path.addLine(to: CGPoint(x: 0, y: rect.height))
                 path.addLine(to: point1)
-            }
+            }*/
         }
     }
 }
