@@ -24,6 +24,10 @@
 		07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */; };
 		07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE2258261AB0042A147 /* CheckBoxView.swift */; };
 		07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */; };
+		A378483B27BA5E85002B7984 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483A27BA5E85002B7984 /* DraggableView.swift */; };
+		A378483D27BA5EB8002B7984 /* RoundedTopHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */; };
+		A378483F27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */; };
+		A378484227BA5FAF002B7984 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378484127BA5FAF002B7984 /* RoundedCorner.swift */; };
 		A3B80F2826FBC83B002780F1 /* AnimatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */; };
 		A3B80F2A26FC88CE002780F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2926FC88CE002780F1 /* Extensions.swift */; };
 		A3B80F2C26FCA29F002780F1 /* AllPointsAnimatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */; };
@@ -51,6 +55,10 @@
 		07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawingTest.swift; sourceTree = "<group>"; };
 		07F91EE2258261AB0042A147 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxViewField.swift; sourceTree = "<group>"; };
+		A378483A27BA5E85002B7984 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTopHandle.swift; sourceTree = "<group>"; };
+		A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableBetweenTwoVerticalPositions.swift; sourceTree = "<group>"; };
+		A378484127BA5FAF002B7984 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingLineView.swift; sourceTree = "<group>"; };
 		A3B80F2926FC88CE002780F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPointsAnimatingLineView.swift; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 		07114EAF259F2A70006841B3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A378484027BA5EC8002B7984 /* DraggableView */,
 				07446CF0256BBC580023FBFD /* AnimatingCirclesView.swift */,
 				07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */,
 				07A3DC8E25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift */,
@@ -87,6 +96,7 @@
 		07114EB0259F2A7B006841B3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A378484127BA5FAF002B7984 /* RoundedCorner.swift */,
 				07A3DC9125AD0CD80068CD8B /* Cell.swift */,
 				07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */,
 				07F91EE2258261AB0042A147 /* CheckBoxView.swift */,
@@ -143,6 +153,16 @@
 				07446CE7256BBA1D0023FBFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A378484027BA5EC8002B7984 /* DraggableView */ = {
+			isa = PBXGroup;
+			children = (
+				A378483A27BA5E85002B7984 /* DraggableView.swift */,
+				A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */,
+				A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */,
+			);
+			path = DraggableView;
 			sourceTree = "<group>";
 		};
 		A3B80F2D26FCA32F002780F1 /* AllPointsAnimatingLineView */ = {
@@ -224,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A378484227BA5FAF002B7984 /* RoundedCorner.swift in Sources */,
+				A378483B27BA5E85002B7984 /* DraggableView.swift in Sources */,
 				07446CF1256BBC580023FBFD /* AnimatingCirclesView.swift in Sources */,
 				0768FFC925AC77EB00523E7F /* RandomBoxPointData.swift in Sources */,
 				07114EB3259F2E35006841B3 /* CubicCurveAlgorithm.swift in Sources */,
@@ -232,6 +254,7 @@
 				07446CE3256BBA1A0023FBFD /* ContentView.swift in Sources */,
 				07DE121C25B3900800ECCD1F /* AnimatingRandomShapesView.swift in Sources */,
 				07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */,
+				A378483D27BA5EB8002B7984 /* RoundedTopHandle.swift in Sources */,
 				A3B80F3126FCA361002780F1 /* AnimatableGraph.swift in Sources */,
 				07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */,
 				07B5858625C4435400798635 /* DemoErrorView.swift in Sources */,
@@ -242,6 +265,7 @@
 				A3B80F2826FBC83B002780F1 /* AnimatingLineView.swift in Sources */,
 				A3B80F2A26FC88CE002780F1 /* Extensions.swift in Sources */,
 				07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */,
+				A378483F27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift in Sources */,
 				A3B80F2C26FCA29F002780F1 /* AllPointsAnimatingLineView.swift in Sources */,
 				07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */,
 			);

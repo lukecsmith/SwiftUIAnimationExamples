@@ -32,6 +32,9 @@ struct ContentView: View {
                 NavigationLink(destination: AllPointsAnimatingLineView()) {
                     Text("All Points Animating Line View")
                 }
+                NavigationLink(destination: DraggableView()) {
+                    Text("View you can drag between two y positions")
+                }
                 /*
                 NavigationLink(destination: LineDrawingTest()) {
                     Text("Line Drawing")
