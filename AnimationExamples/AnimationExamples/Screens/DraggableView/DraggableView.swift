@@ -14,11 +14,11 @@ struct DraggableView: View {
     var body: some View {
         ZStack {
             VStack {
-                RoundedTopHandle()
+                TopHandleBar()
                 List(items, id: \.self) { item in
                     Text(item)
                 }
-            }.draggableBetweenTwoVerticalPositions(min: 0.2, max: 0.7)
+            }.draggableBetweenTwoVerticalPositions(min: 100, max: 400)
         }
     }
 }
