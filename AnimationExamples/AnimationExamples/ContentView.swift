@@ -20,12 +20,6 @@ struct ContentView: View {
                                                                  finalScale: 1.0)) {
                     Text("Circles view")
                 }
-                NavigationLink(destination: DemoAnimatingShapesAsBackground()) {
-                    Text("Random Shapes")
-                }
-                NavigationLink(destination: DemoErrorView()) {
-                    Text("Transitioning Error View")
-                }
                 NavigationLink(destination: AnimatingLineView()) {
                     Text("Animating Line View")
                 }
@@ -35,10 +29,21 @@ struct ContentView: View {
                 NavigationLink(destination: DraggableView()) {
                     Text("View you can drag between two y positions")
                 }
+                NavigationLink(destination: PendulumView()) {
+                    Text("Pendulum")
+                }
+                NavigationLink(destination: DemoErrorView()) {
+                    Text("Transitioning Error View")
+                }
                 /*
-                NavigationLink(destination: LineDrawingTest()) {
-                    Text("Line Drawing")
-                }*/
+                 WIP:
+                 NavigationLink(destination: DemoAnimatingShapesAsBackground()) {
+                     Text("Random Shapes")
+                 }
+                 NavigationLink(destination: LineDrawingTest()) {
+                     Text("Line Drawing")
+                 }
+                */
             }
         }
     }

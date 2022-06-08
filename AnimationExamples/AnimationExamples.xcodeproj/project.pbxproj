@@ -24,6 +24,7 @@
 		07F727EE259CFDD30008CC77 /* LineDrawingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */; };
 		07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE2258261AB0042A147 /* CheckBoxView.swift */; };
 		07F91EE5258261AB0042A147 /* CheckBoxViewField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */; };
+		A35F3F9E27E9ECA000016CEB /* PendulumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35F3F9D27E9ECA000016CEB /* PendulumView.swift */; };
 		A378483B27BA5E85002B7984 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483A27BA5E85002B7984 /* DraggableView.swift */; };
 		A378483D27BA5EB8002B7984 /* RoundedTopHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */; };
 		A378483F27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */; };
@@ -55,6 +56,7 @@
 		07F727ED259CFDD30008CC77 /* LineDrawingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDrawingTest.swift; sourceTree = "<group>"; };
 		07F91EE2258261AB0042A147 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		07F91EE3258261AB0042A147 /* CheckBoxViewField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxViewField.swift; sourceTree = "<group>"; };
+		A35F3F9D27E9ECA000016CEB /* PendulumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendulumView.swift; sourceTree = "<group>"; };
 		A378483A27BA5E85002B7984 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTopHandle.swift; sourceTree = "<group>"; };
 		A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableBetweenTwoVerticalPositions.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */,
 				A3B80F2D26FCA32F002780F1 /* AllPointsAnimatingLineView */,
 				07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */,
+				A35F3F9D27E9ECA000016CEB /* PendulumView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				07A3DC8F25AD0C420068CD8B /* DemoAnimatingShapesAsBackground.swift in Sources */,
 				A378483F27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift in Sources */,
 				A3B80F2C26FCA29F002780F1 /* AllPointsAnimatingLineView.swift in Sources */,
+				A35F3F9E27E9ECA000016CEB /* PendulumView.swift in Sources */,
 				07F91EE4258261AB0042A147 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
