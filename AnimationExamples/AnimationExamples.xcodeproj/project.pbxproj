@@ -29,6 +29,7 @@
 		A378483D27BA5EB8002B7984 /* RoundedTopHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */; };
 		A378483F27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */; };
 		A378484227BA5FAF002B7984 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378484127BA5FAF002B7984 /* RoundedCorner.swift */; };
+		A3A6757D287C1D940097DE50 /* NeumorphicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6757C287C1D940097DE50 /* NeumorphicButtonView.swift */; };
 		A3B80F2826FBC83B002780F1 /* AnimatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */; };
 		A3B80F2A26FC88CE002780F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2926FC88CE002780F1 /* Extensions.swift */; };
 		A3B80F2C26FCA29F002780F1 /* AllPointsAnimatingLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */; };
@@ -61,6 +62,7 @@
 		A378483C27BA5EB8002B7984 /* RoundedTopHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTopHandle.swift; sourceTree = "<group>"; };
 		A378483E27BA5EC2002B7984 /* DraggableBetweenTwoVerticalPositions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableBetweenTwoVerticalPositions.swift; sourceTree = "<group>"; };
 		A378484127BA5FAF002B7984 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		A3A6757C287C1D940097DE50 /* NeumorphicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicButtonView.swift; sourceTree = "<group>"; };
 		A3B80F2726FBC83B002780F1 /* AnimatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingLineView.swift; sourceTree = "<group>"; };
 		A3B80F2926FC88CE002780F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A3B80F2B26FCA29F002780F1 /* AllPointsAnimatingLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPointsAnimatingLineView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				A3B80F2D26FCA32F002780F1 /* AllPointsAnimatingLineView */,
 				07139DE725AE45A70014AA9B /* AnimatingRandomShapesView */,
 				A35F3F9D27E9ECA000016CEB /* PendulumView.swift */,
+				A3A6757C287C1D940097DE50 /* NeumorphicButtonView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A6757D287C1D940097DE50 /* NeumorphicButtonView.swift in Sources */,
 				A378484227BA5FAF002B7984 /* RoundedCorner.swift in Sources */,
 				A378483B27BA5E85002B7984 /* DraggableView.swift in Sources */,
 				07446CF1256BBC580023FBFD /* AnimatingCirclesView.swift in Sources */,

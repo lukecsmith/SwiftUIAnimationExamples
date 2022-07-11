@@ -35,6 +35,9 @@ struct ContentView: View {
                 NavigationLink(destination: DemoErrorView()) {
                     Text("Transitioning Error View")
                 }
+                NavigationLink(destination: NeumorphicView(bgColor: Color.white)) {
+                    Text("Neumorphic Button View")
+                }
                 /*
                  WIP:
                  NavigationLink(destination: DemoAnimatingShapesAsBackground()) {
